@@ -57,15 +57,14 @@
     if(k){
       fetch(AS_URL_BASE+'?k='+k)
       .then(r => r.text())
-      .then((r) => {
-        console.log(r);
+      .then((r) => console.log(r));
         //document.write(r);
         if(r){
           document.location.replace(r);
         }
-      })
+      }
       .catch(err => console.log(err))
-    }
+    
   </script>
   
   <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
